@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({
@@ -9,5 +9,9 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+  isAccordionActive = true
+
+  toggleAccordion() {
+    this.isAccordionActive = !this.isAccordionActive
+  }
 }
