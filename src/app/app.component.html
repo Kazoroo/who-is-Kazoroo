@@ -10,7 +10,8 @@
           (click)="toggleAccordion()"
           [class.active]="isAccordionActive"
           class="accordion-button">
-          <i class="arrow"></i> Contact
+          <i [class.rotate-up]="!isAccordionActive" class="arrow"></i>
+          Contact
         </button>
 
         <div [@openClose]="isAccordionActive ? 'open' : 'closed'" class="contact-item">

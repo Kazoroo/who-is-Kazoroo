@@ -21,7 +21,6 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
         style({
           maxHeight: '0px',
           padding: '0px',
-          // borderTop: '0px'
           borderWidth: '0px'
         })
       ),
