@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+}
+
+aside {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact {
+  width: 100%;
+}
+
+
+#profile-picture {
+  border-radius: 1000px;
+  margin: 20px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+nav {
+  height: 80px;
+}
+
+nav button {
+  height: 80px;
+  background-color: var(--secondary);
+  width: min(33%, 240px);
+  color: white;
+  font-size: var(--font-size-h2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 3px solid var(--tertiary);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:first-of-type {
+  background-color: var(--tertiary);
+}
+
+nav button:hover {
+  background-color: var(--light-secondary);
+}
+
+main {
+  background-color: var(--secondary);
+  flex: 1;
+  padding: 50px;
+}
+
+main p {
+  width: 30vw;
+  min-width: 25vw;
+  margin-bottom: 30px
+}
+
+main h2 {
+  color: var(--tertiary);
+  letter-spacing: 2px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+main img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  margin-bottom: 50px;
+  padding-left: auto;
+}
+
+@media (max-width: 1200px) {
+  #main-section {
+    flex-direction: column;
+  }
+}
+
+#main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+main button {
+  height: 70px;
+  width: 350px;
+  border-radius: 0;
+  border: 3px solid transparent;
+  border-image: linear-gradient(90deg, #93A7F7, #E0FF18);
+  border-image-slice: 1;
+  background-color: var(--primary);
+  color: white;
+  font-family: "Fira Code", monospace;
+  font-size: var(--font-size-body);
+  text-align: center;
+  line-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+
+.material-symbols-outlined {
+  font-size: 32px;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 300;
+  color: gray;
+}
+
+hr {
+  width: 380px;
+  color: var(--tertiary);
+  margin: 20px
+}
+
+.accordion-button {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  cursor: pointer;
+  height: 8vh;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-size-h2);
+  font-weight: 500;
+  border: none;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+  transition: 0.4s;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 6px;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+  transform: scaleX(-1) rotate(45deg);
+}
+
+.rotate-up {
+  transform: scaleY(-1) rotate(45deg);
+}
+
+.contact-item {
+  background-color: var(--secondary);
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px black solid;
+  border-right: 1px black solid;
+  padding: 10px;
+  transition: max-height 0.3s ease-out;
+  width: 100%;
+}
+
+.contact-item p {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  padding: 15px;
+}
+
+.contact-item svg, img, h2 {
+  float: left;
+}
+
+.contact-item h2 {
+  margin-left: 25%;
+  height: 60px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-item svg, img {
+  margin: 10px;
+}
