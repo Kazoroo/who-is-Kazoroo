@@ -46,23 +46,6 @@ nav {
   height: 80px;
 }
 
-nav button {
-  height: 80px;
-  background-color: var(--secondary);
-  width: min(33%, 240px);
-  color: white;
-  font-size: var(--font-size-h2);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border: none;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 3px solid var(--tertiary);
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
 nav button:first-of-type {
   background-color: var(--tertiary);
 }
@@ -97,7 +80,6 @@ main img {
   height: auto;
   aspect-ratio: auto;
   margin-bottom: 50px;
-  padding-left: auto;
 }
 
 @media (max-width: 1200px) {
@@ -127,7 +109,12 @@ main button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px
+  gap: 10px;
+  transition: 0.4s;
+}
+
+main button:hover {
+  transform: scale(1.1);
 }
 
 .material-symbols-outlined {
@@ -146,21 +133,6 @@ hr {
   width: 380px;
   color: var(--tertiary);
   margin: 20px
-}
-
-.accordion-button {
-  background-color: var(--secondary);
-  color: var(--tertiary);
-  cursor: pointer;
-  height: 8vh;
-  width: 100%;
-  text-align: center;
-  font-size: var(--font-size-h2);
-  font-weight: 500;
-  border: none;
-  border-right: 1px black solid;
-  border-bottom: 1px black solid;
-  transition: 0.4s;
 }
 
 .arrow {
