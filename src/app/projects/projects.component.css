@@ -30,7 +30,6 @@ aside {
   width: 100%;
 }
 
-
 #profile-picture {
   border-radius: 1000px;
   margin: 20px;
@@ -125,35 +124,47 @@ hr {
   transform: scaleY(-1) rotate(45deg);
 }
 
-.contact-item {
+.accordion-item {
+  position: relative;
   background-color: var(--secondary);
   overflow: hidden;
   border: none;
   border-bottom: 1px black solid;
   border-right: 1px black solid;
   padding: 10px;
-  transition: max-height 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
 }
 
-.contact-item p {
-  width: 100%;
+.accordion-item h2 {
   text-align: center;
-  clear: both;
-  padding: 15px;
 }
 
-.contact-item svg, img, h2 {
-  float: left;
+.accordion-item svg, img {
+  border-radius: 100%;
 }
 
-.contact-item h2 {
-  margin-left: 25%;
-  height: 60px;
-  text-align: center;
-  margin-top: 20px;
+.accordion-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left, var(--tertiary) 0%, transparent 30%);
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  pointer-events: none;
 }
 
-.contact-item svg, img {
-  margin: 10px;
+.accordion-item:hover::before {
+  opacity: 1;
+}
+
+.selected-project {
+  background: linear-gradient(to left, var(--tertiary) 0%, var(--secondary) 70%);
 }

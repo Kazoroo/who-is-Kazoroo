@@ -149,7 +149,7 @@ hr {
   transform: scaleY(-1) rotate(45deg);
 }
 
-.contact-item {
+.accordion-item {
   background-color: var(--secondary);
   overflow: hidden;
   border: none;
@@ -160,24 +160,24 @@ hr {
   width: 100%;
 }
 
-.contact-item p {
+.accordion-item p {
   width: 100%;
   text-align: center;
   clear: both;
   padding: 15px;
 }
 
-.contact-item svg, img, h2 {
+.accordion-item svg, img, h2 {
   float: left;
 }
 
-.contact-item h2 {
+.accordion-item h2 {
   margin-left: 25%;
   height: 60px;
   text-align: center;
   margin-top: 20px;
 }
 
-.contact-item svg, img {
+.accordion-item svg, img {
   margin: 10px;
 }
