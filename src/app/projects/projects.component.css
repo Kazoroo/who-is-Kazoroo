@@ -71,6 +71,19 @@ main h2 {
   margin-left: 20px;
   margin-bottom: 50px;
   width: 100%;
+  font-size: 3rem;
+}
+
+main h3 {
+  padding-bottom: 20px;
+}
+
+main ul {
+  padding-left: 40px;
+
+  li {
+    padding: 0.4em
+  }
 }
 
 main img {
@@ -79,6 +92,12 @@ main img {
   height: auto;
   aspect-ratio: auto;
   margin-bottom: 50px;
+  border-radius: 5%;
+}
+
+#main-images {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -90,6 +109,10 @@ main img {
 #main-section {
   display: flex;
   justify-content: space-between;
+}
+
+a {
+  color: deepskyblue;
 }
 
 .material-symbols-outlined {
@@ -140,11 +163,7 @@ hr {
   cursor: pointer;
 }
 
-.accordion-item h2 {
-  text-align: center;
-}
-
-.accordion-item svg, img {
+.accordion-item img {
   border-radius: 100%;
 }
 
