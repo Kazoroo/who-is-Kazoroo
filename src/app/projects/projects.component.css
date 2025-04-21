@@ -56,7 +56,9 @@ nav button:hover {
 main {
   background-color: var(--secondary);
   flex: 1;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 main p {
@@ -109,6 +111,20 @@ main img {
 #main-section {
   display: flex;
   justify-content: space-between;
+}
+
+#slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  img {
+    height: 650px;
+    width: auto;
+    object-fit: cover;
+  }
 }
 
 a {
