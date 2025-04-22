@@ -1,3 +1,8 @@
+#project-name {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
 
 #project {
   background-color: var(--secondary);
@@ -34,12 +39,15 @@
   }
 }
 
+.accordion-item:nth-of-type(2) {
+  background: #E0FF18;
+}
+
 #project img {
   position: relative;
   max-width: 100%;
   height: auto;
   aspect-ratio: auto;
-  margin-bottom: 50px;
   border-radius: 5%;
 }
 
