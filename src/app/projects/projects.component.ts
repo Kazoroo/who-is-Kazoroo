@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
-import {RouterLink, RouterOutlet} from "@angular/router";
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
@@ -8,7 +8,8 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   imports: [
     NgOptimizedImage,
     RouterOutlet,
-    RouterLink
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',

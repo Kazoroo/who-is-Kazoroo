@@ -14,17 +14,30 @@
           Project
         </button>
 
-        <div [@openClose]="isAccordionActive ? 'open' : 'closed'" class="accordion-item selected-project"
-             routerLink="/projects/tavern-farkle">
+        <div
+          [@openClose]="isAccordionActive ? 'open' : 'closed'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="accordion-item"
+          routerLink="/projects/tavern-farkle"
+          routerLinkActive="selected-project">
           <img alt="Tavern Farkle logo" height="60" ngSrc="/tavern-farkle.png" width="60">
           <h2>Tavern Farkle</h2>
         </div>
-        <div [@openClose]="isAccordionActive ? 'open' : 'closed'" class="accordion-item"
-             routerLink="/projects/triviagen">
+        <div
+          [@openClose]="isAccordionActive ? 'open' : 'closed'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="accordion-item"
+          routerLink="/projects/triviagen"
+          routerLinkActive="selected-project">
           <img alt="Triviagen logo" height="60" ngSrc="/triviagen.png" width="60">
           <h2>Triviagen</h2>
         </div>
-        <div [@openClose]="isAccordionActive ? 'open' : 'closed'" class="accordion-item">
+        <div
+          [@openClose]="isAccordionActive ? 'open' : 'closed'"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="accordion-item"
+          routerLink="/projects/who-is-kazoroo"
+          routerLinkActive="selected-project">
           <img alt="who is kazoroo logo" height="60" ngSrc="/who-is-kazoroo.png" width="60">
           <h2>who-is-Kazoroo</h2>
         </div>
