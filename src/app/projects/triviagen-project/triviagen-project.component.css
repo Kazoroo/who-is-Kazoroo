@@ -28,7 +28,7 @@
 }
 
 #project h3 {
-  padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 #project ul {
@@ -47,9 +47,10 @@
   border-radius: 5%;
 }
 
-#main-images {
+#main-images a {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 @media (max-width: 1200px) {
