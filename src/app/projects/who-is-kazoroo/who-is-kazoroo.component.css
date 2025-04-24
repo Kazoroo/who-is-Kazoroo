@@ -1,6 +1,7 @@
 #project-name {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 
 #project-description {
@@ -13,7 +14,6 @@
   padding: 0 50px 0 50px;
   display: flex;
   justify-content: space-between;
-  min-height: 800px;
 }
 
 #project p {
@@ -31,16 +31,16 @@
   font-size: 3rem;
 }
 
-#project h3 {
-  padding-top: 30px;
-}
-
 #project ul {
   padding-left: 40px;
 
   li {
     padding: 0.4em
   }
+}
+
+.accordion-item:nth-of-type(2) {
+  background: #E0FF18;
 }
 
 #project img {
@@ -55,6 +55,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {

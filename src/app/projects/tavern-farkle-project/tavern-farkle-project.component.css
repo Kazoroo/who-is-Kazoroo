@@ -4,6 +4,10 @@
   padding-top: 10px;
 }
 
+#project-description {
+  height: 85vh;
+}
+
 #project {
   background-color: var(--secondary);
   flex: 1;
