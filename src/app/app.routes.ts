@@ -11,6 +11,7 @@ export const routes: Routes = [
     path: "projects",
     component: ProjectsComponent,
     children: [
+      {path: "", redirectTo: "tavern-farkle", pathMatch: "full"},
       {path: "tavern-farkle", component: TavernFarkleProjectComponent},
       {path: "triviagen", component: TriviagenProjectComponent},
     ]
